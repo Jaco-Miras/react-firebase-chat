@@ -1,13 +1,14 @@
-import { Detail } from "./components/Detail/Detail";
-import { List } from "./components/List/List";
-import { Chat } from "./components/chat/Chat";
+import React from "react";
+import { ChatList } from "./components/ChatList";
+import { Chat } from "./components/Chat";
+import { Details } from "./components/Details";
 
 const App = () => {
   return (
-    <div className="container">
-      <List />
+    <div className="flex">
+      <ChatList />
       <Chat />
-      <Detail />
+      {/* <Details /> */}
     </div>
   );
 };
